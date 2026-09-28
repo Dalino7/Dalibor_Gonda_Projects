@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected data engineering, analytics and quantitative research projects by Dalibor Gonda.">
+  <meta name="theme-color" content="#07110f">
+  <title>Dalibor Gonda — Data Projects</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307110f'/%3E%3Cpath d='M14 44V29h8v15zm14 0V18h8v26zm14 0V24h8v20z' fill='%236de0c2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css?v=20260928-2">
+</head>
+<body>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>Dalibor Gonda</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#football">Football pipeline</a>
+      <a href="#research">Research</a>
+      <a class="contact-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dalo.gonda@gmail.com" target="_blank" rel="noopener noreferrer">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro shell" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow">Data engineering · Analytics · Quantitative research</p>
+        <h1 id="page-title">I build systems that turn messy data into decisions.</h1>
+        <p class="lede">Two projects showing the full path from raw inputs and validation to a deployed product and defensible analytical results.</p>
+        <div class="intro-actions">
+          <a class="button primary" href="#projects">Explore projects <span aria-hidden="true">↓</span></a>
+          <a class="button secondary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dalo.gonda@gmail.com" target="_blank" rel="noopener noreferrer">dalo.gonda@gmail.com</a>
+        </div>
+      </div>
+      <div class="system-map" aria-label="Data workflow: ingest, validate, model, deliver">
+        <p class="map-label">A repeatable workflow</p>
+        <div class="map-flow">
+          <span>Ingest</span><b>→</b><span>Validate</span><b>→</b><span>Model</span><b>→</b><span>Deliver</span>
+        </div>
+        <div class="map-grid" aria-hidden="true">
+          <i style="--h:38%"></i><i style="--h:62%"></i><i style="--h:49%"></i><i style="--h:82%"></i><i style="--h:70%"></i><i style="--h:96%"></i><i style="--h:64%"></i><i style="--h:88%"></i><i style="--h:58%"></i><i style="--h:76%"></i><i style="--h:44%"></i><i style="--h:68%"></i>
+        </div>
+        <p class="map-note">Architecture, transformation logic, quality checks and a usable output — treated as one system.</p>
+      </div>
+    </section>
+
+    <section class="project-index shell" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="projects-title">Projects with working systems behind them</h2>
+      </div>
+      <div class="project-grid">
+        <a class="project-card featured" href="#football">
+          <div class="card-top"><span class="project-no">01</span><span class="status"><i></i> Deployed pilot</span></div>
+          <h3>Flowlytics Football</h3>
+          <p>Automated GPS performance pipeline and bilingual web dashboard for a football club.</p>
+          <div class="card-tags"><span>Apps Script</span><span>JavaScript</span><span>Vercel</span></div>
+          <span class="card-arrow">View case study <b>↘</b></span>
+        </a>
+        <a class="project-card" href="#research">
+          <div class="card-top"><span class="project-no">02</span><span class="status neutral">Master's research</span></div>
+          <h3>Forest Drought Monitoring</h3>
+          <p>Thirty-year satellite time series, drought anomalies and independent cross-sensor validation.</p>
+          <div class="card-tags"><span>Google Earth Engine</span><span>Python</span><span>R</span><span>Remote sensing</span></div>
+          <span class="card-arrow">View case study <b>↘</b></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="case-study shell" id="football" aria-labelledby="football-title">
+      <div class="case-kicker"><span>01</span> End-to-end data product</div>
+      <div class="case-hero">
+        <div>
+          <p class="eyebrow">Flowlytics Football</p>
+          <h2 id="football-title">From a match export to a coaching dashboard — automatically.</h2>
+          <p class="case-summary">A web-based GPS analytics product that refreshes after every match. The coach uploads one CSV or XLSX file; the pipeline handles ingestion, validation, consolidation and delivery.</p>
+          <div class="live-links" aria-label="Open the live Flowlytics Football dashboard">
+            <a href="https://flowlytics-football-apetlon-dalibors-projects-34143e04.vercel.app" target="_blank" rel="noopener noreferrer">
+              <span><small>Live product</small>Open dashboard — Slovak</span><b aria-hidden="true">↗</b>
+            </a>
+            <a href="https://flowlytics-football-apetlon-dalibors-projects-34143e04.vercel.app/index-de.html" target="_blank" rel="noopener noreferrer">
+              <span><small>Live product</small>Dashboard öffnen — Deutsch</span><b aria-hidden="true">↗</b>
+            </a>
+          </div>
+        </div>
+        <dl class="impact-stats">
+          <div><dt>3</dt><dd>matches live</dd></div>
+          <div><dt>7</dt><dd>players in pilot</dd></div>
+          <div><dt>22</dt><dd>performance fields</dd></div>
+          <div><dt>≤ 1 h</dt><dd>refresh window</dd></div>
+        </dl>
+      </div>
+
+      <div class="architecture-panel">
+        <div class="panel-title"><span>System architecture</span><small>One manual step: upload the file</small></div>
+        <div class="pipeline" aria-label="Google Drive to Apps Script to Google Sheets to CSV endpoint to Vercel dashboard">
+          <div class="pipe-node"><b>01</b><strong>Drive folder</strong><small>CSV / XLSX</small></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-node"><b>02</b><strong>Apps Script</strong><small>hourly trigger</small></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-node"><b>03</b><strong>Master Sheet</strong><small>validated records</small></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-node"><b>04</b><strong>CSV endpoint</strong><small>stable URL</small></div>
+          <span class="pipe-arrow">→</span>
+          <div class="pipe-node final"><b>05</b><strong>Web dashboard</strong><small>Vercel</small></div>
+        </div>
+      </div>
+
+      <div class="two-column">
+        <article class="content-block">
+          <p class="block-label">Problem</p>
+          <h3>Performance data existed, but comparison did not.</h3>
+          <p>Each match produced a GPS export that had to be inspected manually. Comparing players, halves and matches meant rebuilding the analysis in spreadsheets. The goal was a reusable workflow that required no technical work from the coach.</p>
+        </article>
+        <article class="content-block accent-block">
+          <p class="block-label">Product decision</p>
+          <h3>Optimise the pilot for speed and zero licences.</h3>
+          <p>Google Drive and Sheets provide a pragmatic ingestion and storage layer for the current volume. A static JavaScript application keeps deployment simple, removes licence requirements and gives the coach one stable link.</p>
+        </article>
+      </div>
+
+      <div class="capabilities">
+        <div class="section-heading compact"><p class="eyebrow">Delivered functionality</p><h3>A product, not a static report</h3></div>
+        <div class="capability-grid">
+          <article><span>01</span><h4>Player & team KPIs</h4><p>Distance, top speed, sprints, calories, intensity and impacts switch dynamically between team averages and individual values.</p></article>
+          <article><span>02</span><h4>Performance diagnostics</h4><p>Player rankings, first-vs-second-half decline, mechanical load, intensity and radar profiles for high-intensity work.</p></article>
+          <article><span>03</span><h4>Cross-match trends</h4><p>A dedicated view tracks the selected player and team over time and summarises all processed matches.</p></article>
+          <article><span>04</span><h4>Bilingual delivery</h4><p>Slovak and German interfaces share one calculation layer, while interface copy stays isolated in language files.</p></article>
+        </div>
+      </div>
+
+      <div class="challenge-layout">
+        <div class="section-heading compact"><p class="eyebrow">Engineering decisions</p><h3>The hard part was making spreadsheet data dependable.</h3></div>
+        <div class="challenge-list">
+          <article><span class="challenge-id">A</span><div><h4>Multiple input formats</h4><p>XLSX files are converted through the Drive API while CSV files are parsed directly. Both continue through the same validation path.</p></div></article>
+          <article><span class="challenge-id">B</span><div><h4>Type corruption</h4><p>Values such as “8.01” were interpreted as dates. Explicit numeric typing, a unified date format and locale-aware decimal parsing made ingestion consistent.</p></div></article>
+          <article><span class="challenge-id">C</span><div><h4>Duplicate prevention</h4><p>Processed files are registered by immutable file ID in a dedicated sheet so the same match cannot be ingested twice.</p></div></article>
+          <article><span class="challenge-id">D</span><div><h4>Stable deployment</h4><p>The dashboard runs as a static application on Vercel. Updates ship without changing the link already shared with the coach.</p></div></article>
+        </div>
+      </div>
+
+      <div class="limits">
+        <div>
+          <p class="eyebrow">Known limits</p>
+          <h3>What I would improve next</h3>
+        </div>
+        <ul>
+          <li><b>Normalise by minutes played</b><span>Short appearances currently lower team averages.</span></li>
+          <li><b>Automate outlier detection</b><span>A 43.2 km/h reading exposes the need for domain thresholds.</span></li>
+          <li><b>Add authentication</b><span>The pilot is link-accessible; wider rollout requires access control.</span></li>
+          <li><b>Introduce workload monitoring</b><span>ACWR is the planned next analytical layer.</span></li>
+        </ul>
+      </div>
+
+      <div class="scale-panel">
+        <p class="block-label">Production evolution</p>
+        <h3>How the architecture could scale beyond the pilot</h3>
+        <div class="scale-flow"><span>Cloud Storage</span><b>→</b><span>Scheduled ingestion</span><b>→</b><span>BigQuery</span><b>→</b><span>SQL models & tests</span><b>→</b><span>Authenticated app</span></div>
+        <p>The existing system validates the user workflow. The next version would replace spreadsheet storage with a warehouse, introduce incremental loads, observability and formal data-quality tests while preserving the same zero-friction upload experience.</p>
+      </div>
+
+      <div class="tech-row" aria-label="Technologies used"><span>Google Apps Script</span><span>Google Sheets</span><span>Drive API</span><span>JavaScript</span><span>Chart.js</span><span>PapaParse</span><span>HTML/CSS</span><span>Vercel</span></div>
+    </section>
+
+    <section class="case-study research shell" id="research" aria-labelledby="research-title">
+      <div class="case-kicker"><span>02</span> Quantitative research</div>
+      <div class="case-hero">
+        <div>
+          <p class="eyebrow">Master's research</p>
+          <h2 id="research-title">Thirty years of satellite data, tested against independent evidence.</h2>
+          <p class="case-summary">Long-term monitoring of vegetation dynamics and drought stress in European beech forests using Google Earth Engine, Python and R to process multi-sensor satellite imagery, climatic drought indices and phenological observations.</p>
+        </div>
+        <dl class="impact-stats research-stats">
+          <div><dt>1995–2025</dt><dd>study period</dd></div>
+          <div><dt>0.856</dt><dd>Pearson r</dd></div>
+          <div><dt>0.732</dt><dd>R²</dd></div>
+          <div><dt>+0.007</dt><dd>sensor bias</dd></div>
+        </dl>
+      </div>
+
+      <div class="research-flow" aria-label="Research workflow">
+        <div><b>01</b><strong>Acquire</strong><small>Landsat 5–9 · Sentinel-2</small></div>
+        <div><b>02</b><strong>Process</strong><small>Python · cloud masking · NDVI</small></div>
+        <div><b>03</b><strong>Analyse</strong><small>time series · anomalies · SPEI</small></div>
+        <div><b>04</b><strong>Validate</strong><small>cross-sensor · phenology</small></div>
+        <div><b>05</b><strong>Interpret</strong><small>drought response · trends</small></div>
+      </div>
+
+      <div class="two-column research-columns">
+        <article class="content-block">
+          <p class="block-label">Research question</p>
+          <h3>Can long-term satellite observations reveal drought stress in forest vegetation?</h3>
+          <p>I used Python in Google Earth Engine to process Landsat 5–9 and Sentinel-2 imagery, calculate NDVI time series and anomalies, and identify drought-related vegetation stress. I then used R for statistical analysis and compared the satellite signal with climatic SPEI and phenological observations.</p>
+        </article>
+        <article class="content-block accent-block research-accent">
+          <p class="block-label">Methodological principle</p>
+          <h3>No single dataset was treated as ground truth.</h3>
+          <p>The result was tested across sensors and against independent observations. This separated persistent vegetation signals from sensor behaviour, seasonality and individual anomalous measurements.</p>
+        </article>
+      </div>
+
+      <div class="evidence-panel">
+        <div class="evidence-copy">
+          <p class="eyebrow">Independent validation</p>
+          <h3>The methodology held across sensors.</h3>
+          <p>Landsat-derived vegetation dynamics were compared with Sentinel-2 and with observed spring leaf-out timing. The validation produced strong agreement while keeping the remaining bias visible.</p>
+        </div>
+        <div class="evidence-metrics">
+          <div><span>Cross-source relationship</span><strong>r = 0.856</strong><i style="--p:85.6%"></i></div>
+          <div><span>Explained variability</span><strong>R² = 0.732</strong><i style="--p:73.2%"></i></div>
+          <div><span>Sentinel-2 vs Landsat bias</span><strong>+0.007</strong><i class="bias" style="--p:7%"></i></div>
+        </div>
+      </div>
+
+      <div class="research-notes">
+        <article><span>01</span><h4>Long time horizon</h4><p>A 1995–2025 series required consistent treatment across multiple generations of satellite sensors.</p></article>
+        <article><span>02</span><h4>Seasonality and anomalies</h4><p>Recurring seasonal vegetation behaviour had to be separated from drought-related departures and longer-term change.</p></article>
+        <article><span>03</span><h4>Cross-source validation</h4><p>Satellite results were challenged using a second sensor and independent phenological observations.</p></article>
+      </div>
+
+      <div class="tech-row" aria-label="Technologies used"><span>Google Earth Engine</span><span>Python</span><span>R</span><span>ArcGIS / QGIS</span><span>Landsat 5–9</span><span>Sentinel-2</span><span>NDVI</span><span>SPEI</span></div>
+    </section>
+
+    <section class="closing shell">
+      <p class="eyebrow">Common thread</p>
+      <h2>Validate the input. Build the system. Make the result usable.</h2>
+      <p>Whether the source is a GPS export or a thirty-year satellite archive, my work starts by making the data dependable and ends with an output that another person can use.</p>
+      <a class="button primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dalo.gonda@gmail.com" target="_blank" rel="noopener noreferrer">Start a conversation <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>Dalibor Gonda · Bratislava, Slovakia</span>
+    <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=dalo.gonda@gmail.com" target="_blank" rel="noopener noreferrer">dalo.gonda@gmail.com</a>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
